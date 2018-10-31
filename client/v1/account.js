@@ -192,3 +192,14 @@ Account.prototype.showProfile = function() {
     return Account.showProfile(this.session);
 };
 
+
+Account.prototype.recentActivity = function() {
+  return new Request(this.session)
+    .setMethod('GET')
+    .setResource('recentActivity')
+    .send()
+    .then(function (json) {
+      return camelKeys(json);
+    });
+};
+
