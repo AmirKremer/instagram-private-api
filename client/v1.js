@@ -28,6 +28,7 @@ InstagramV1.ThreadItem = require('./v1/thread-item');
 InstagramV1.QE = require('./v1/qe');
 InstagramV1.Upload = require('./v1/upload');
 InstagramV1.discover = require('./v1/discover');
+InstagramV1.suggestedUsers = require('./v1/suggested-users');
 InstagramV1.Save = require('./v1/save');
 InstagramV1.search = require('./v1/search');
 
